@@ -10,13 +10,13 @@ public class Homework4 {
          */
         //I used lowered all case and used Array/split words method to split the words.
         String threeWordSentence_1 = "hApPy nEW yeAr";
-        String[] splitWords = threeWordSentence_1.toLowerCase().split(" ");
+        String[] splitWords = threeWordSentence_1.split(" ");
         //Used substring method to separate first letter from each word,
         // uppercase method to make first letter capital
         //connected first letter with each word using substring method again.
-        String word1 = splitWords[0].substring(0,1).toUpperCase() + splitWords[0].substring(1);
-        String word2 = splitWords[1].substring(0,1).toUpperCase()+ splitWords[1].substring(1);
-        String word3 = splitWords[2].substring(0,1).toUpperCase()+splitWords[2].substring(1);
+        String word1 = splitWords[0].substring(0,1).toUpperCase() + splitWords[0].substring(1).toLowerCase();
+        String word2 = splitWords[1].substring(0,1).toUpperCase()+ splitWords[1].substring(1).toLowerCase();
+        String word3 = splitWords[2].substring(0,1).toUpperCase()+splitWords[2].substring(1).toLowerCase();
         System.out.println(word1 + " " +word2+ " " + word3);
 
 
@@ -25,10 +25,10 @@ public class Homework4 {
          */
         //Used same pattern as Q#1 to separate words and make each word's first letter capital.
         String threeWordSentence_2 = "wOrlD iS beaUTiFuL";
-        String[] splitWords_2 = threeWordSentence_2.toLowerCase().split(" ");
-        String word_1 = splitWords_2[0].substring(0,1).toUpperCase()+splitWords_2[0].substring(1);
-        String word_2 = splitWords_2[1].substring(0,1).toUpperCase()+splitWords_2[1].substring(1);
-        String word_3 = splitWords_2[2].substring(0,1).toUpperCase()+splitWords_2[2].substring(1);
+        String[] splitWords_2 = threeWordSentence_2.split(" ");
+        String word_1 = splitWords_2[0].substring(0,1).toUpperCase()+splitWords_2[0].substring(1).toLowerCase();
+        String word_2 = splitWords_2[1].substring(0,1).toUpperCase()+splitWords_2[1].substring(1).toLowerCase();
+        String word_3 = splitWords_2[2].substring(0,1).toUpperCase()+splitWords_2[2].substring(1).toLowerCase();
         //used char method and uppercase method get first letter of each word and use as abbreviation.
         char word_1_1 = splitWords_2[0].toUpperCase().charAt(0);
         char word_2_2 = splitWords_2[1].toUpperCase().charAt(0);
