@@ -63,7 +63,18 @@ public class Homework7 {
              */
 
             String task4Sentence = "hOW arE You My DEAr FRiEnd";
-            // 
+            int count = 0;
+            char [] vowels = {'a','e','i','o','u'};
+            for (int c=0 ; c <task4Sentence.length(); c++) {
+            char ch = task4Sentence.toLowerCase().charAt(c);
+            for (char vowel : vowels) {
+                if (vowel == ch) {
+                    count++;
+                }
+            }
+            //System.out.println(count);
+            }
+            System.out.println(count);
 
 
 

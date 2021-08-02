@@ -72,8 +72,16 @@ public class Homework6 {
             * Print the average of numbers in array.
              */
         int[] numbers = {10, 20, 30, 40, 50};
-        int averageOfNumbers = (10 + 20 + 30 + 40 + 50) / 5;
-        System.out.println("The average of numbers" + Arrays.toString(numbers) + " is " + averageOfNumbers);
+        double total= 0;
+        for (double arrayNumbers : numbers){
+            total+= arrayNumbers;
+        }
+        double average= 0;
+        if (numbers.length>0){
+            average = total / numbers.length;
+        }
+
+        System.out.println("The average of numbers"+ numbers+ " is " + average);
 
 
 
